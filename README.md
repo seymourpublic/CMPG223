@@ -1,7 +1,7 @@
 # CMPG223
 v3
 NAMES
-Naledi Sandamela 31816339                                                                                                                                               Ntjie Magongwa 32374697                                                                                                                                          Ofentse Dibetso 31855016                                                                                                                                                              Vukile Senama   28111192                                                                                                                                                                               Tebogo Setona   28910273
+Naledi Sandamela 31816339                                                                                                                                               Ntjie Magongwa 32374697                                                                                                                                          Ofentse Dibetso 31855016                                                                                                                              
 
 
 
