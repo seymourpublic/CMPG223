@@ -113,5 +113,10 @@ namespace Project1
             size = size + 1;
             MessageBox.Show("Item succesfully loaded to cart");
         }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
