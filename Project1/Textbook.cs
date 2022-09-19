@@ -35,7 +35,7 @@ namespace Project1
         {
 
         }
-
+        //should not sell!!!!!!!!!!
         private void btnSell_Click(object sender, EventArgs e)
         {
             string name = nameTextBox.Text;
@@ -127,11 +127,44 @@ namespace Project1
         private void button1_Click(object sender, EventArgs e)
         {
 
+            frmReturned returned = new frmReturned();   
+            returned.ShowDialog();  
+            this.Close();   
         }
 
         private void textbooksDataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            frmClients clients = new frmClients();
+            clients.ShowDialog();   
+            this.Close();   
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            RentedOutFrm rent= new RentedOutFrm();
+            rent.ShowDialog();
+            this.Close();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            TextbooksSoldTxb sale = new TextbooksSoldTxb();
+            sale.ShowDialog();
+            this.Close();
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            RentedOutFrm rentedOutFrm = new RentedOutFrm();
+            String studentNo;
+            String status;
+
+            rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32("rent number"), studentNo, Convert.ToInt32(textbook_NoTextBox.Text), status);
         }
     }
 }

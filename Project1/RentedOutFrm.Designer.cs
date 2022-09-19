@@ -48,6 +48,7 @@ namespace Project1
             this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.rentedOutBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circleDataSetBindingSource)).BeginInit();
@@ -64,11 +65,12 @@ namespace Project1
             this.textbookNoDataGridViewTextBoxColumn,
             this.statusDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.rentedOutBindingSource;
-            this.dataGridView1.Location = new System.Drawing.Point(1, 31);
+            this.dataGridView1.Location = new System.Drawing.Point(11, 28);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(551, 200);
+            this.dataGridView1.Size = new System.Drawing.Size(669, 162);
             this.dataGridView1.TabIndex = 0;
             // 
             // rentNoDataGridViewTextBoxColumn
@@ -124,38 +126,43 @@ namespace Project1
             // 
             // StatusTxb
             // 
-            this.StatusTxb.Location = new System.Drawing.Point(127, 379);
+            this.StatusTxb.Location = new System.Drawing.Point(95, 308);
+            this.StatusTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StatusTxb.Name = "StatusTxb";
-            this.StatusTxb.Size = new System.Drawing.Size(100, 22);
+            this.StatusTxb.Size = new System.Drawing.Size(76, 20);
             this.StatusTxb.TabIndex = 1;
             // 
             // TextbookNoTxb
             // 
-            this.TextbookNoTxb.Location = new System.Drawing.Point(127, 340);
+            this.TextbookNoTxb.Location = new System.Drawing.Point(95, 276);
+            this.TextbookNoTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextbookNoTxb.Name = "TextbookNoTxb";
-            this.TextbookNoTxb.Size = new System.Drawing.Size(100, 22);
+            this.TextbookNoTxb.Size = new System.Drawing.Size(76, 20);
             this.TextbookNoTxb.TabIndex = 2;
             // 
             // StudentNoTxb
             // 
-            this.StudentNoTxb.Location = new System.Drawing.Point(127, 296);
+            this.StudentNoTxb.Location = new System.Drawing.Point(95, 240);
+            this.StudentNoTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.StudentNoTxb.Name = "StudentNoTxb";
-            this.StudentNoTxb.Size = new System.Drawing.Size(100, 22);
+            this.StudentNoTxb.Size = new System.Drawing.Size(76, 20);
             this.StudentNoTxb.TabIndex = 3;
             // 
             // RentTxb
             // 
-            this.RentTxb.Location = new System.Drawing.Point(127, 253);
+            this.RentTxb.Location = new System.Drawing.Point(95, 206);
+            this.RentTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.RentTxb.Name = "RentTxb";
-            this.RentTxb.Size = new System.Drawing.Size(100, 22);
+            this.RentTxb.Size = new System.Drawing.Size(76, 20);
             this.RentTxb.TabIndex = 4;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(32, 258);
+            this.label1.Location = new System.Drawing.Point(24, 210);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(76, 17);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 5;
             this.label1.Text = "Rented No";
             this.label1.Click += new System.EventHandler(this.label1_Click);
@@ -163,45 +170,60 @@ namespace Project1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(32, 299);
+            this.label2.Location = new System.Drawing.Point(24, 243);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 17);
+            this.label2.Size = new System.Drawing.Size(61, 13);
             this.label2.TabIndex = 6;
             this.label2.Text = "Student No";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(32, 340);
+            this.label3.Location = new System.Drawing.Point(24, 276);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(88, 17);
+            this.label3.Size = new System.Drawing.Size(69, 13);
             this.label3.TabIndex = 7;
             this.label3.Text = "Textbook No";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 382);
+            this.label4.Location = new System.Drawing.Point(24, 310);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(48, 17);
+            this.label4.Size = new System.Drawing.Size(37, 13);
             this.label4.TabIndex = 8;
             this.label4.Text = "Status";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(267, 253);
+            this.button1.Location = new System.Drawing.Point(200, 206);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 66);
+            this.button1.Size = new System.Drawing.Size(80, 54);
             this.button1.TabIndex = 9;
             this.button1.Text = "Insert Rented Book";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(526, 231);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 36);
+            this.button2.TabIndex = 22;
+            this.button2.Text = "Return To textbook page";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
             // RentedOutFrm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(803, 366);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -212,6 +234,7 @@ namespace Project1
             this.Controls.Add(this.TextbookNoTxb);
             this.Controls.Add(this.StatusTxb);
             this.Controls.Add(this.dataGridView1);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "RentedOutFrm";
             this.Text = "RentedOutFrm";
             this.Load += new System.EventHandler(this.RentedOutFrm_Load);
@@ -230,7 +253,6 @@ namespace Project1
         private CircleDataSet circleDataSet;
         private System.Windows.Forms.BindingSource circleDataSetBindingSource;
         private System.Windows.Forms.BindingSource rentedOutBindingSource;
-        private CircleDataSetTableAdapters.Rented_outTableAdapter rented_outTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn rentNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn textbookNoDataGridViewTextBoxColumn;
@@ -244,5 +266,7 @@ namespace Project1
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button button2;
+        public CircleDataSetTableAdapters.Rented_outTableAdapter rented_outTableAdapter;
     }
 }

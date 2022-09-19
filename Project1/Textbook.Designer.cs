@@ -85,6 +85,7 @@ namespace Project1
             this.ShowAllItemsBtn = new System.Windows.Forms.Button();
             this.module_codeTextBox = new System.Windows.Forms.TextBox();
             this.circleDataSet1 = new Project1.CircleDataSet();
+            this.button5 = new System.Windows.Forms.Button();
             nameLabel = new System.Windows.Forms.Label();
             quantityLabel = new System.Windows.Forms.Label();
             priceLabel = new System.Windows.Forms.Label();
@@ -101,27 +102,30 @@ namespace Project1
             // nameLabel
             // 
             nameLabel.AutoSize = true;
-            nameLabel.Location = new System.Drawing.Point(934, 111);
+            nameLabel.Location = new System.Drawing.Point(700, 90);
+            nameLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             nameLabel.Name = "nameLabel";
-            nameLabel.Size = new System.Drawing.Size(49, 17);
+            nameLabel.Size = new System.Drawing.Size(38, 13);
             nameLabel.TabIndex = 2;
             nameLabel.Text = "Name:";
             // 
             // quantityLabel
             // 
             quantityLabel.AutoSize = true;
-            quantityLabel.Location = new System.Drawing.Point(934, 155);
+            quantityLabel.Location = new System.Drawing.Point(700, 126);
+            quantityLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             quantityLabel.Name = "quantityLabel";
-            quantityLabel.Size = new System.Drawing.Size(65, 17);
+            quantityLabel.Size = new System.Drawing.Size(49, 13);
             quantityLabel.TabIndex = 4;
             quantityLabel.Text = "Quantity:";
             // 
             // priceLabel
             // 
             priceLabel.AutoSize = true;
-            priceLabel.Location = new System.Drawing.Point(934, 200);
+            priceLabel.Location = new System.Drawing.Point(700, 162);
+            priceLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             priceLabel.Name = "priceLabel";
-            priceLabel.Size = new System.Drawing.Size(44, 17);
+            priceLabel.Size = new System.Drawing.Size(34, 13);
             priceLabel.TabIndex = 6;
             priceLabel.Text = "Price:";
             priceLabel.Click += new System.EventHandler(this.priceLabel_Click);
@@ -129,18 +133,20 @@ namespace Project1
             // textbook_NoLabel
             // 
             textbook_NoLabel.AutoSize = true;
-            textbook_NoLabel.Location = new System.Drawing.Point(934, 241);
+            textbook_NoLabel.Location = new System.Drawing.Point(700, 196);
+            textbook_NoLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             textbook_NoLabel.Name = "textbook_NoLabel";
-            textbook_NoLabel.Size = new System.Drawing.Size(92, 17);
+            textbook_NoLabel.Size = new System.Drawing.Size(72, 13);
             textbook_NoLabel.TabIndex = 9;
             textbook_NoLabel.Text = "Textbook No:";
             // 
             // module_codeLabel
             // 
             module_codeLabel.AutoSize = true;
-            module_codeLabel.Location = new System.Drawing.Point(934, 282);
+            module_codeLabel.Location = new System.Drawing.Point(700, 229);
+            module_codeLabel.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             module_codeLabel.Name = "module_codeLabel";
-            module_codeLabel.Size = new System.Drawing.Size(93, 17);
+            module_codeLabel.Size = new System.Drawing.Size(72, 13);
             module_codeLabel.TabIndex = 42;
             module_codeLabel.Text = "Module code:";
             // 
@@ -163,10 +169,10 @@ namespace Project1
             this.lsbText.DataSource = this.textbooksBindingSource;
             this.lsbText.DisplayMember = "Textbook No";
             this.lsbText.FormattingEnabled = true;
-            this.lsbText.ItemHeight = 16;
-            this.lsbText.Location = new System.Drawing.Point(785, 108);
+            this.lsbText.Location = new System.Drawing.Point(589, 88);
+            this.lsbText.Margin = new System.Windows.Forms.Padding(2);
             this.lsbText.Name = "lsbText";
-            this.lsbText.Size = new System.Drawing.Size(120, 196);
+            this.lsbText.Size = new System.Drawing.Size(91, 160);
             this.lsbText.TabIndex = 1;
             this.lsbText.SelectedIndexChanged += new System.EventHandler(this.lsbText_SelectedIndexChanged);
             // 
@@ -185,33 +191,37 @@ namespace Project1
             // nameTextBox
             // 
             this.nameTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.textbooksBindingSource, "Name", true));
-            this.nameTextBox.Location = new System.Drawing.Point(1032, 108);
+            this.nameTextBox.Location = new System.Drawing.Point(774, 88);
+            this.nameTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.nameTextBox.Name = "nameTextBox";
-            this.nameTextBox.Size = new System.Drawing.Size(100, 22);
+            this.nameTextBox.Size = new System.Drawing.Size(76, 20);
             this.nameTextBox.TabIndex = 3;
             // 
             // quantityTextBox
             // 
             this.quantityTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.textbooksBindingSource, "Quantity", true));
-            this.quantityTextBox.Location = new System.Drawing.Point(1032, 155);
+            this.quantityTextBox.Location = new System.Drawing.Point(774, 126);
+            this.quantityTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.quantityTextBox.Name = "quantityTextBox";
-            this.quantityTextBox.Size = new System.Drawing.Size(100, 22);
+            this.quantityTextBox.Size = new System.Drawing.Size(76, 20);
             this.quantityTextBox.TabIndex = 5;
             // 
             // priceTextBox
             // 
             this.priceTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.textbooksBindingSource, "Price", true));
-            this.priceTextBox.Location = new System.Drawing.Point(1032, 195);
+            this.priceTextBox.Location = new System.Drawing.Point(774, 158);
+            this.priceTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.priceTextBox.Name = "priceTextBox";
-            this.priceTextBox.Size = new System.Drawing.Size(100, 22);
+            this.priceTextBox.Size = new System.Drawing.Size(76, 20);
             this.priceTextBox.TabIndex = 7;
             this.priceTextBox.TextChanged += new System.EventHandler(this.priceTextBox_TextChanged);
             // 
             // btnSell
             // 
-            this.btnSell.Location = new System.Drawing.Point(785, 324);
+            this.btnSell.Location = new System.Drawing.Point(589, 263);
+            this.btnSell.Margin = new System.Windows.Forms.Padding(2);
             this.btnSell.Name = "btnSell";
-            this.btnSell.Size = new System.Drawing.Size(347, 32);
+            this.btnSell.Size = new System.Drawing.Size(260, 26);
             this.btnSell.TabIndex = 8;
             this.btnSell.Text = "Sell";
             this.btnSell.UseVisualStyleBackColor = true;
@@ -220,9 +230,10 @@ namespace Project1
             // textbook_NoTextBox
             // 
             this.textbook_NoTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.textbooksBindingSource, "Textbook No", true));
-            this.textbook_NoTextBox.Location = new System.Drawing.Point(1032, 238);
+            this.textbook_NoTextBox.Location = new System.Drawing.Point(774, 193);
+            this.textbook_NoTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.textbook_NoTextBox.Name = "textbook_NoTextBox";
-            this.textbook_NoTextBox.Size = new System.Drawing.Size(100, 22);
+            this.textbook_NoTextBox.Size = new System.Drawing.Size(76, 20);
             this.textbook_NoTextBox.TabIndex = 10;
             // 
             // bindingNavigator1
@@ -251,7 +262,7 @@ namespace Project1
             this.bindingNavigator1.MovePreviousItem = this.bindingNavigatorMovePreviousItem;
             this.bindingNavigator1.Name = "bindingNavigator1";
             this.bindingNavigator1.PositionItem = this.bindingNavigatorPositionItem;
-            this.bindingNavigator1.Size = new System.Drawing.Size(1205, 27);
+            this.bindingNavigator1.Size = new System.Drawing.Size(904, 27);
             this.bindingNavigator1.TabIndex = 11;
             this.bindingNavigator1.Text = "bindingNavigator1";
             // 
@@ -261,13 +272,13 @@ namespace Project1
             this.bindingNavigatorAddNewItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorAddNewItem.Image")));
             this.bindingNavigatorAddNewItem.Name = "bindingNavigatorAddNewItem";
             this.bindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorAddNewItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorAddNewItem.Text = "Add new";
             // 
             // bindingNavigatorCountItem
             // 
             this.bindingNavigatorCountItem.Name = "bindingNavigatorCountItem";
-            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(45, 24);
+            this.bindingNavigatorCountItem.Size = new System.Drawing.Size(35, 24);
             this.bindingNavigatorCountItem.Text = "of {0}";
             this.bindingNavigatorCountItem.ToolTipText = "Total number of items";
             // 
@@ -277,7 +288,7 @@ namespace Project1
             this.bindingNavigatorDeleteItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorDeleteItem.Image")));
             this.bindingNavigatorDeleteItem.Name = "bindingNavigatorDeleteItem";
             this.bindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorDeleteItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorDeleteItem.Text = "Delete";
             // 
             // bindingNavigatorMoveFirstItem
@@ -286,7 +297,7 @@ namespace Project1
             this.bindingNavigatorMoveFirstItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveFirstItem.Image")));
             this.bindingNavigatorMoveFirstItem.Name = "bindingNavigatorMoveFirstItem";
             this.bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveFirstItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveFirstItem.Text = "Move first";
             // 
             // bindingNavigatorMovePreviousItem
@@ -295,7 +306,7 @@ namespace Project1
             this.bindingNavigatorMovePreviousItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMovePreviousItem.Image")));
             this.bindingNavigatorMovePreviousItem.Name = "bindingNavigatorMovePreviousItem";
             this.bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMovePreviousItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMovePreviousItem.Text = "Move previous";
             // 
             // bindingNavigatorSeparator
@@ -309,7 +320,7 @@ namespace Project1
             this.bindingNavigatorPositionItem.AutoSize = false;
             this.bindingNavigatorPositionItem.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.bindingNavigatorPositionItem.Name = "bindingNavigatorPositionItem";
-            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(50, 27);
+            this.bindingNavigatorPositionItem.Size = new System.Drawing.Size(38, 23);
             this.bindingNavigatorPositionItem.Text = "0";
             this.bindingNavigatorPositionItem.ToolTipText = "Current position";
             // 
@@ -324,7 +335,7 @@ namespace Project1
             this.bindingNavigatorMoveNextItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveNextItem.Image")));
             this.bindingNavigatorMoveNextItem.Name = "bindingNavigatorMoveNextItem";
             this.bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveNextItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveNextItem.Text = "Move next";
             // 
             // bindingNavigatorMoveLastItem
@@ -333,7 +344,7 @@ namespace Project1
             this.bindingNavigatorMoveLastItem.Image = ((System.Drawing.Image)(resources.GetObject("bindingNavigatorMoveLastItem.Image")));
             this.bindingNavigatorMoveLastItem.Name = "bindingNavigatorMoveLastItem";
             this.bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = true;
-            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(29, 24);
+            this.bindingNavigatorMoveLastItem.Size = new System.Drawing.Size(24, 24);
             this.bindingNavigatorMoveLastItem.Text = "Move last";
             // 
             // bindingNavigatorSeparator2
@@ -352,11 +363,12 @@ namespace Project1
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn5});
             this.textbooksDataGridView.DataSource = this.textbooksBindingSource;
-            this.textbooksDataGridView.Location = new System.Drawing.Point(12, 95);
+            this.textbooksDataGridView.Location = new System.Drawing.Point(9, 77);
+            this.textbooksDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.textbooksDataGridView.Name = "textbooksDataGridView";
             this.textbooksDataGridView.RowHeadersWidth = 51;
             this.textbooksDataGridView.RowTemplate.Height = 24;
-            this.textbooksDataGridView.Size = new System.Drawing.Size(677, 261);
+            this.textbooksDataGridView.Size = new System.Drawing.Size(508, 212);
             this.textbooksDataGridView.TabIndex = 20;
             this.textbooksDataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.textbooksDataGridView_CellContentClick);
             // 
@@ -403,9 +415,10 @@ namespace Project1
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(785, 375);
+            this.btnDelete.Location = new System.Drawing.Point(589, 305);
+            this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
-            this.btnDelete.Size = new System.Drawing.Size(347, 32);
+            this.btnDelete.Size = new System.Drawing.Size(260, 26);
             this.btnDelete.TabIndex = 21;
             this.btnDelete.Text = "Delete textbook";
             this.btnDelete.UseVisualStyleBackColor = true;
@@ -413,9 +426,10 @@ namespace Project1
             // 
             // btnAdd
             // 
-            this.btnAdd.Location = new System.Drawing.Point(18, 567);
+            this.btnAdd.Location = new System.Drawing.Point(14, 461);
+            this.btnAdd.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdd.Name = "btnAdd";
-            this.btnAdd.Size = new System.Drawing.Size(467, 36);
+            this.btnAdd.Size = new System.Drawing.Size(350, 29);
             this.btnAdd.TabIndex = 23;
             this.btnAdd.Text = "Add new textbook";
             this.btnAdd.UseVisualStyleBackColor = true;
@@ -424,109 +438,125 @@ namespace Project1
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(288, 498);
+            this.label2.Location = new System.Drawing.Point(216, 405);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(40, 17);
+            this.label2.Size = new System.Drawing.Size(31, 13);
             this.label2.TabIndex = 25;
             this.label2.Text = "Price";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(15, 498);
+            this.label3.Location = new System.Drawing.Point(11, 405);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(61, 17);
+            this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 26;
             this.label3.Text = "Quantity";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(288, 439);
+            this.label4.Location = new System.Drawing.Point(216, 357);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(91, 17);
+            this.label4.Size = new System.Drawing.Size(70, 13);
             this.label4.TabIndex = 27;
             this.label4.Text = "Module Code";
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(15, 441);
+            this.label5.Location = new System.Drawing.Point(11, 358);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(45, 17);
+            this.label5.Size = new System.Drawing.Size(35, 13);
             this.label5.TabIndex = 28;
             this.label5.Text = "Name";
             // 
             // txbAname
             // 
-            this.txbAname.Location = new System.Drawing.Point(82, 436);
+            this.txbAname.Location = new System.Drawing.Point(62, 354);
+            this.txbAname.Margin = new System.Windows.Forms.Padding(2);
             this.txbAname.Name = "txbAname";
-            this.txbAname.Size = new System.Drawing.Size(100, 22);
+            this.txbAname.Size = new System.Drawing.Size(76, 20);
             this.txbAname.TabIndex = 29;
             // 
             // txbAcode
             // 
-            this.txbAcode.Location = new System.Drawing.Point(385, 436);
+            this.txbAcode.Location = new System.Drawing.Point(289, 354);
+            this.txbAcode.Margin = new System.Windows.Forms.Padding(2);
             this.txbAcode.Name = "txbAcode";
-            this.txbAcode.Size = new System.Drawing.Size(100, 22);
+            this.txbAcode.Size = new System.Drawing.Size(76, 20);
             this.txbAcode.TabIndex = 30;
             // 
             // txbAquant
             // 
-            this.txbAquant.Location = new System.Drawing.Point(82, 498);
+            this.txbAquant.Location = new System.Drawing.Point(62, 405);
+            this.txbAquant.Margin = new System.Windows.Forms.Padding(2);
             this.txbAquant.Name = "txbAquant";
-            this.txbAquant.Size = new System.Drawing.Size(100, 22);
+            this.txbAquant.Size = new System.Drawing.Size(76, 20);
             this.txbAquant.TabIndex = 31;
             // 
             // txbAprice
             // 
-            this.txbAprice.Location = new System.Drawing.Point(385, 495);
+            this.txbAprice.Location = new System.Drawing.Point(289, 402);
+            this.txbAprice.Margin = new System.Windows.Forms.Padding(2);
             this.txbAprice.Name = "txbAprice";
-            this.txbAprice.Size = new System.Drawing.Size(100, 22);
+            this.txbAprice.Size = new System.Drawing.Size(76, 20);
             this.txbAprice.TabIndex = 32;
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(1052, 41);
+            this.button1.Location = new System.Drawing.Point(726, 29);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 33);
+            this.button1.Size = new System.Drawing.Size(125, 27);
             this.button1.TabIndex = 33;
-            this.button1.Text = "button1";
+            this.button1.Text = "View Return records";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(937, 41);
+            this.button2.Location = new System.Drawing.Point(589, 29);
+            this.button2.Margin = new System.Windows.Forms.Padding(2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(89, 33);
+            this.button2.Size = new System.Drawing.Size(117, 27);
             this.button2.TabIndex = 34;
-            this.button2.Text = "button2";
+            this.button2.Text = "View Sale Records";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(822, 41);
+            this.button3.Location = new System.Drawing.Point(400, 29);
+            this.button3.Margin = new System.Windows.Forms.Padding(2);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(83, 33);
+            this.button3.Size = new System.Drawing.Size(118, 27);
             this.button3.TabIndex = 35;
-            this.button3.Text = "button3";
+            this.button3.Text = "View Rental records";
             this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(696, 41);
+            this.button4.Location = new System.Drawing.Point(238, 29);
+            this.button4.Margin = new System.Windows.Forms.Padding(2);
             this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(91, 33);
+            this.button4.Size = new System.Drawing.Size(127, 27);
             this.button4.TabIndex = 36;
-            this.button4.Text = "button4";
+            this.button4.Text = "View Client Records";
             this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
             // 
             // SearchBtn
             // 
-            this.SearchBtn.Location = new System.Drawing.Point(785, 512);
+            this.SearchBtn.Location = new System.Drawing.Point(589, 416);
+            this.SearchBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SearchBtn.Name = "SearchBtn";
-            this.SearchBtn.Size = new System.Drawing.Size(347, 23);
+            this.SearchBtn.Size = new System.Drawing.Size(260, 19);
             this.SearchBtn.TabIndex = 37;
             this.SearchBtn.Text = "Search";
             this.SearchBtn.UseVisualStyleBackColor = true;
@@ -534,9 +564,10 @@ namespace Project1
             // 
             // SearchTxb
             // 
-            this.SearchTxb.Location = new System.Drawing.Point(785, 472);
+            this.SearchTxb.Location = new System.Drawing.Point(589, 384);
+            this.SearchTxb.Margin = new System.Windows.Forms.Padding(2);
             this.SearchTxb.Name = "SearchTxb";
-            this.SearchTxb.Size = new System.Drawing.Size(347, 22);
+            this.SearchTxb.Size = new System.Drawing.Size(261, 20);
             this.SearchTxb.TabIndex = 38;
             this.SearchTxb.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
             // 
@@ -547,18 +578,20 @@ namespace Project1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(782, 436);
+            this.label1.Location = new System.Drawing.Point(586, 354);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(143, 17);
+            this.label1.Size = new System.Drawing.Size(109, 13);
             this.label1.TabIndex = 39;
             this.label1.Text = "Search for a textbook";
             this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // ShowAllItemsBtn
             // 
-            this.ShowAllItemsBtn.Location = new System.Drawing.Point(12, 627);
+            this.ShowAllItemsBtn.Location = new System.Drawing.Point(14, 530);
+            this.ShowAllItemsBtn.Margin = new System.Windows.Forms.Padding(2);
             this.ShowAllItemsBtn.Name = "ShowAllItemsBtn";
-            this.ShowAllItemsBtn.Size = new System.Drawing.Size(1120, 23);
+            this.ShowAllItemsBtn.Size = new System.Drawing.Size(836, 19);
             this.ShowAllItemsBtn.TabIndex = 40;
             this.ShowAllItemsBtn.Text = "Show All Items";
             this.ShowAllItemsBtn.UseVisualStyleBackColor = true;
@@ -567,9 +600,10 @@ namespace Project1
             // module_codeTextBox
             // 
             this.module_codeTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.textbooksBindingSource, "Module code", true));
-            this.module_codeTextBox.Location = new System.Drawing.Point(1033, 279);
+            this.module_codeTextBox.Location = new System.Drawing.Point(775, 227);
+            this.module_codeTextBox.Margin = new System.Windows.Forms.Padding(2);
             this.module_codeTextBox.Name = "module_codeTextBox";
-            this.module_codeTextBox.Size = new System.Drawing.Size(100, 22);
+            this.module_codeTextBox.Size = new System.Drawing.Size(76, 20);
             this.module_codeTextBox.TabIndex = 43;
             // 
             // circleDataSet1
@@ -577,11 +611,22 @@ namespace Project1
             this.circleDataSet1.DataSetName = "CircleDataSet";
             this.circleDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(14, 502);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(835, 23);
+            this.button5.TabIndex = 44;
+            this.button5.Text = "Rent out select textbook";
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.button5_Click);
+            // 
             // Textbook
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1205, 677);
+            this.ClientSize = new System.Drawing.Size(904, 560);
+            this.Controls.Add(this.button5);
             this.Controls.Add(module_codeLabel);
             this.Controls.Add(this.module_codeTextBox);
             this.Controls.Add(this.ShowAllItemsBtn);
@@ -614,6 +659,7 @@ namespace Project1
             this.Controls.Add(nameLabel);
             this.Controls.Add(this.nameTextBox);
             this.Controls.Add(this.lsbText);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Textbook";
             this.Text = "Textbook";
             this.Load += new System.EventHandler(this.Textbook_Load);
@@ -679,5 +725,6 @@ namespace Project1
         private System.Windows.Forms.Button ShowAllItemsBtn;
         private System.Windows.Forms.TextBox module_codeTextBox;
         private CircleDataSet circleDataSet1;
+        private System.Windows.Forms.Button button5;
     }
 }

@@ -1,7 +1,7 @@
 ﻿
 namespace Project1
 {
-    partial class Returned
+    partial class frmReturned
     {
         /// <summary>
         /// Required designer variable.
@@ -31,14 +31,14 @@ namespace Project1
         {
             this.components = new System.ComponentModel.Container();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.circleDataSet = new Project1.CircleDataSet();
-            this.returnedBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.returnedTableAdapter = new Project1.CircleDataSetTableAdapters.ReturnedTableAdapter();
             this.returnedNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.textbookNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.studentNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.statusDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.returnedBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.circleDataSet = new Project1.CircleDataSet();
+            this.returnedTableAdapter = new Project1.CircleDataSetTableAdapters.ReturnedTableAdapter();
             this.button1 = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,9 +51,10 @@ namespace Project1
             this.label5 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.circleDataSet1 = new Project1.CircleDataSet();
+            this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnedBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circleDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circleDataSet1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,25 +70,12 @@ namespace Project1
             this.statusDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.returnedBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(678, 216);
+            this.dataGridView1.Size = new System.Drawing.Size(677, 176);
             this.dataGridView1.TabIndex = 0;
-            // 
-            // circleDataSet
-            // 
-            this.circleDataSet.DataSetName = "CircleDataSet";
-            this.circleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // returnedBindingSource
-            // 
-            this.returnedBindingSource.DataMember = "Returned";
-            this.returnedBindingSource.DataSource = this.circleDataSet;
-            // 
-            // returnedTableAdapter
-            // 
-            this.returnedTableAdapter.ClearBeforeFill = true;
             // 
             // returnedNoDataGridViewTextBoxColumn
             // 
@@ -129,93 +117,119 @@ namespace Project1
             this.statusDataGridViewTextBoxColumn.Name = "statusDataGridViewTextBoxColumn";
             this.statusDataGridViewTextBoxColumn.Width = 125;
             // 
+            // returnedBindingSource
+            // 
+            this.returnedBindingSource.DataMember = "Returned";
+            this.returnedBindingSource.DataSource = this.circleDataSet;
+            // 
+            // circleDataSet
+            // 
+            this.circleDataSet.DataSetName = "CircleDataSet";
+            this.circleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // returnedTableAdapter
+            // 
+            this.returnedTableAdapter.ClearBeforeFill = true;
+            // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(330, 297);
+            this.button1.Location = new System.Drawing.Point(241, 195);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(107, 66);
+            this.button1.Size = new System.Drawing.Size(80, 54);
             this.button1.TabIndex = 18;
             this.button1.Text = "Insert Returned Book";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(68, 364);
+            this.label4.Location = new System.Drawing.Point(51, 296);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(46, 17);
+            this.label4.Size = new System.Drawing.Size(35, 13);
             this.label4.TabIndex = 17;
             this.label4.Text = "label4";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(68, 322);
+            this.label3.Location = new System.Drawing.Point(51, 262);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 17);
+            this.label3.Size = new System.Drawing.Size(59, 13);
             this.label3.TabIndex = 16;
-            this.label3.Text = "label3";
+            this.label3.Text = "Student no";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(68, 281);
+            this.label2.Location = new System.Drawing.Point(51, 228);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 17);
+            this.label2.Size = new System.Drawing.Size(67, 13);
             this.label2.TabIndex = 15;
-            this.label2.Text = "label2";
+            this.label2.Text = "Textbook no";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(68, 240);
+            this.label1.Location = new System.Drawing.Point(51, 195);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(59, 13);
             this.label1.TabIndex = 14;
-            this.label1.Text = "label1";
+            this.label1.Text = "Return No.";
             // 
             // RentTxb
             // 
-            this.RentTxb.Location = new System.Drawing.Point(146, 235);
+            this.RentTxb.Location = new System.Drawing.Point(110, 191);
+            this.RentTxb.Margin = new System.Windows.Forms.Padding(2);
             this.RentTxb.Name = "RentTxb";
-            this.RentTxb.Size = new System.Drawing.Size(100, 22);
+            this.RentTxb.Size = new System.Drawing.Size(76, 20);
             this.RentTxb.TabIndex = 13;
             // 
             // StudentNoTxb
             // 
-            this.StudentNoTxb.Location = new System.Drawing.Point(146, 278);
+            this.StudentNoTxb.Location = new System.Drawing.Point(110, 226);
+            this.StudentNoTxb.Margin = new System.Windows.Forms.Padding(2);
             this.StudentNoTxb.Name = "StudentNoTxb";
-            this.StudentNoTxb.Size = new System.Drawing.Size(100, 22);
+            this.StudentNoTxb.Size = new System.Drawing.Size(76, 20);
             this.StudentNoTxb.TabIndex = 12;
             // 
             // TextbookNoTxb
             // 
-            this.TextbookNoTxb.Location = new System.Drawing.Point(146, 322);
+            this.TextbookNoTxb.Location = new System.Drawing.Point(110, 262);
+            this.TextbookNoTxb.Margin = new System.Windows.Forms.Padding(2);
             this.TextbookNoTxb.Name = "TextbookNoTxb";
-            this.TextbookNoTxb.Size = new System.Drawing.Size(100, 22);
+            this.TextbookNoTxb.Size = new System.Drawing.Size(76, 20);
             this.TextbookNoTxb.TabIndex = 11;
             // 
             // StatusTxb
             // 
-            this.StatusTxb.Location = new System.Drawing.Point(146, 361);
+            this.StatusTxb.Location = new System.Drawing.Point(110, 293);
+            this.StatusTxb.Margin = new System.Windows.Forms.Padding(2);
             this.StatusTxb.Name = "StatusTxb";
-            this.StatusTxb.Size = new System.Drawing.Size(100, 22);
+            this.StatusTxb.Size = new System.Drawing.Size(76, 20);
             this.StatusTxb.TabIndex = 10;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(68, 403);
+            this.label5.Location = new System.Drawing.Point(51, 327);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 17);
+            this.label5.Size = new System.Drawing.Size(37, 13);
             this.label5.TabIndex = 20;
-            this.label5.Text = "label5";
+            this.label5.Text = "Status";
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(146, 400);
+            this.textBox1.Location = new System.Drawing.Point(110, 325);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 22);
+            this.textBox1.Size = new System.Drawing.Size(76, 20);
             this.textBox1.TabIndex = 19;
             // 
             // circleDataSet1
@@ -223,11 +237,22 @@ namespace Project1
             this.circleDataSet1.DataSetName = "CircleDataSet";
             this.circleDataSet1.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // Returned
+            // button2
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.button2.Location = new System.Drawing.Point(701, 12);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(95, 36);
+            this.button2.TabIndex = 21;
+            this.button2.Text = "Return To textbook page";
+            this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // frmReturned
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(805, 367);
+            this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.button1);
@@ -240,12 +265,13 @@ namespace Project1
             this.Controls.Add(this.TextbookNoTxb);
             this.Controls.Add(this.StatusTxb);
             this.Controls.Add(this.dataGridView1);
-            this.Name = "Returned";
+            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Name = "frmReturned";
             this.Text = "Returned";
             this.Load += new System.EventHandler(this.Returned_Load);
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.circleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnedBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.circleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circleDataSet1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -275,5 +301,6 @@ namespace Project1
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox textBox1;
         private CircleDataSet circleDataSet1;
+        private System.Windows.Forms.Button button2;
     }
 }

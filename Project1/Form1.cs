@@ -2,8 +2,7 @@
 Naledi Sandamela 31816339
 Ntjie Magongwa 32374697
 Ofentse Dibetso 31855016
-Vukile Senama   28111192
-Tebogo Setona   28910273
+
 *******************************************************************************************/
 
 
@@ -54,26 +53,31 @@ namespace Project1
                 MailMessage msg = new MailMessage();
                 msg.From = new MailAddress("naledisandamela@gmail.com");
                 msg.To.Add(email);
-                msg.Subject = name + " Order";
+                msg.Subject = name + " Purchase Order";
                 string message = type+"\t \n";
+                message += "Good Day " + name + "\n" + "Thank you for taking interest in the Golden Circle store" 
+                    + "\n" + "Please find the quote for your selected Textbooks below. " +
+                    "When you are ready to make a purchase show this quote to any of our assistants and they will help you make your purchase";
+
                 while (i <= size)
                 {
                     message += "\n" +titles[i] + "\t R" + prices[i] + "\n";
                     i++;
                 }
+                message += "\n" + "Kind Regards" + "\n" + "Golden Circle";
                 msg.Body = message;
 
                 SmtpClient smt = new SmtpClient();
                 smt.Host = "smtp.gmail.com";
                 System.Net.NetworkCredential ntcd = new NetworkCredential();
                 ntcd.UserName = "naledisandamela@gmail.com";
-                ntcd.Password = "Tholoana2 and the prodigy";
+                ntcd.Password = "upgebfojdlloivcw";
                 smt.Credentials = ntcd;
                 smt.EnableSsl = true;
                 smt.Port = 587;
                 smt.Send(msg);
 
-                MessageBox.Show("Sent");
+                MessageBox.Show("Quotation sent succesfully");
 
             }
             catch (Exception ex)

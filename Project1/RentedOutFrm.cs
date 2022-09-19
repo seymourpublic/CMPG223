@@ -35,5 +35,12 @@ namespace Project1
             this.rented_outTableAdapter.InsertQuery(Convert.ToInt32(RentTxb.Text), StudentNoTxb.Text, Convert.ToInt32(TextbookNoTxb.Text), StatusTxb.Text);
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Textbook textbook = new Textbook();
+            textbook.ShowDialog();
+            this.Close();
+        }
     }
 }
