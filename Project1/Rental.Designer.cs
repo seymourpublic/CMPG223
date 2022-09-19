@@ -56,7 +56,6 @@ namespace Project1
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
             pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbData)).BeginInit();
@@ -339,17 +338,6 @@ namespace Project1
             this.label8.TabIndex = 33;
             this.label8.Text = "R30 p/m";
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(728, 492);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(76, 70);
-            this.button1.TabIndex = 34;
-            this.button1.Text = "Rent";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
-            // 
             // Rental
             // 
             this.AccessibleRole = System.Windows.Forms.AccessibleRole.None;
@@ -360,7 +348,6 @@ namespace Project1
             this.AutoScrollMinSize = new System.Drawing.Size(5, 5);
             this.BackColor = System.Drawing.Color.AliceBlue;
             this.ClientSize = new System.Drawing.Size(802, 643);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -430,6 +417,5 @@ namespace Project1
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
     }
 }
