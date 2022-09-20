@@ -114,8 +114,8 @@ namespace Project1
             // 
             // TextbookSoldTxb
             // 
-            this.TextbookSoldTxb.Location = new System.Drawing.Point(413, 269);
-            this.TextbookSoldTxb.Margin = new System.Windows.Forms.Padding(2);
+            this.TextbookSoldTxb.Location = new System.Drawing.Point(222, 249);
+            this.TextbookSoldTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.TextbookSoldTxb.Name = "TextbookSoldTxb";
             this.TextbookSoldTxb.Size = new System.Drawing.Size(80, 54);
             this.TextbookSoldTxb.TabIndex = 30;
@@ -180,6 +180,7 @@ namespace Project1
             this.TextbookNoTxb.Name = "TextbookNoTxb";
             this.TextbookNoTxb.Size = new System.Drawing.Size(76, 20);
             this.TextbookNoTxb.TabIndex = 24;
+            this.TextbookNoTxb.TextChanged += new System.EventHandler(this.TextbookNoTxb_TextChanged);
             // 
             // StudNoTxb
             // 
@@ -188,6 +189,7 @@ namespace Project1
             this.StudNoTxb.Name = "StudNoTxb";
             this.StudNoTxb.Size = new System.Drawing.Size(76, 20);
             this.StudNoTxb.TabIndex = 23;
+            this.StudNoTxb.TextChanged += new System.EventHandler(this.StudNoTxb_TextChanged);
             // 
             // DateTxb
             // 
@@ -196,6 +198,7 @@ namespace Project1
             this.DateTxb.Name = "DateTxb";
             this.DateTxb.Size = new System.Drawing.Size(76, 20);
             this.DateTxb.TabIndex = 22;
+            this.DateTxb.TextChanged += new System.EventHandler(this.DateTxb_TextChanged);
             // 
             // textbooks_soldTableAdapter
             // 

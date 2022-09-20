@@ -42,6 +42,20 @@ namespace Project1
         //should not sell!!!!!!!!!!
         private void btnSell_Click(object sender, EventArgs e)
         {
+
+            using (TextbooksSoldTxb textbooksSoldTxb = new TextbooksSoldTxb())
+            {
+                if (textbooksSoldTxb.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    this.Text = textbooksSoldTxb.Text;
+
+                    textbooksSoldTxb.textbooks_soldTableAdapter.InsertQuery(Convert.ToInt32(textbooksSoldTxb.textbookSold), Convert.ToInt32(textbook_NoTextBox.Text), textbooksSoldTxb.studentNo, textbooksSoldTxb.Date);
+                  
+                    //rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32(rentedOutFrm.rentNo), rentedOutFrm.studentno, Convert.ToInt32(textbook_NoTextBox.Text), rentedOutFrm.status);
+
+                }
+            }
+
             TextbooksSoldTxb soldTxb = new TextbooksSoldTxb();  
 
             string name = nameTextBox.Text;
