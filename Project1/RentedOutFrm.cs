@@ -14,6 +14,7 @@ namespace Project1
     {
          public string studentno { get; set; }
         public string status { get; set; }
+        public string rentNo { get; set; }  
 
         public RentedOutFrm()
         {
@@ -60,6 +61,11 @@ namespace Project1
         {
             status = StatusTxb.Text;
 
+        }
+
+        private void RentTxb_TextChanged(object sender, EventArgs e)
+        {
+            rentNo = RentTxb.Text;
         }
     }
 }

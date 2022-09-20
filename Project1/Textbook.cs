@@ -174,7 +174,7 @@ namespace Project1
                 if (rentedOutFrm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
                 {
                     this.Text = rentedOutFrm.Text;
-                    rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32(rentedOutFrm.RentTx), rentedOutFrm.studentno, Convert.ToInt32(textbook_NoTextBox.Text), rentedOutFrm.status);
+                    rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32(rentedOutFrm.rentNo), rentedOutFrm.studentno, Convert.ToInt32(textbook_NoTextBox.Text), rentedOutFrm.status);
 
                 }
             }

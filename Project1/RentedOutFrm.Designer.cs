@@ -157,6 +157,7 @@ namespace Project1
             this.RentTxb.Name = "RentTxb";
             this.RentTxb.Size = new System.Drawing.Size(76, 20);
             this.RentTxb.TabIndex = 4;
+            this.RentTxb.TextChanged += new System.EventHandler(this.RentTxb_TextChanged);
             // 
             // label1
             // 
