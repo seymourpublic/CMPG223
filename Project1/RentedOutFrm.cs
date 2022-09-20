@@ -12,7 +12,7 @@ namespace Project1
 {
     public partial class RentedOutFrm : Form
     {
-         public string studentno { get; set; }
+        public string studentno { get; set; }
         public string status { get; set; }
         public string rentNo { get; set; }  
 

@@ -63,7 +63,7 @@ namespace Project1
             this.dateDataGridViewTextBoxColumn});
             this.textbooksDataGridView.DataSource = this.textbooksSoldBindingSource;
             this.textbooksDataGridView.Location = new System.Drawing.Point(23, 10);
-            this.textbooksDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textbooksDataGridView.Margin = new System.Windows.Forms.Padding(2);
             this.textbooksDataGridView.Name = "textbooksDataGridView";
             this.textbooksDataGridView.RowHeadersWidth = 51;
             this.textbooksDataGridView.RowTemplate.Height = 24;
@@ -114,8 +114,9 @@ namespace Project1
             // 
             // TextbookSoldTxb
             // 
+            this.TextbookSoldTxb.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.TextbookSoldTxb.Location = new System.Drawing.Point(222, 249);
-            this.TextbookSoldTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextbookSoldTxb.Margin = new System.Windows.Forms.Padding(2);
             this.TextbookSoldTxb.Name = "TextbookSoldTxb";
             this.TextbookSoldTxb.Size = new System.Drawing.Size(80, 54);
             this.TextbookSoldTxb.TabIndex = 30;
@@ -167,7 +168,7 @@ namespace Project1
             // TextbookSldTxb
             // 
             this.TextbookSldTxb.Location = new System.Drawing.Point(110, 232);
-            this.TextbookSldTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextbookSldTxb.Margin = new System.Windows.Forms.Padding(2);
             this.TextbookSldTxb.Name = "TextbookSldTxb";
             this.TextbookSldTxb.Size = new System.Drawing.Size(76, 20);
             this.TextbookSldTxb.TabIndex = 25;
@@ -176,26 +177,29 @@ namespace Project1
             // TextbookNoTxb
             // 
             this.TextbookNoTxb.Location = new System.Drawing.Point(110, 267);
-            this.TextbookNoTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextbookNoTxb.Margin = new System.Windows.Forms.Padding(2);
             this.TextbookNoTxb.Name = "TextbookNoTxb";
             this.TextbookNoTxb.Size = new System.Drawing.Size(76, 20);
             this.TextbookNoTxb.TabIndex = 24;
+            this.TextbookNoTxb.TextChanged += new System.EventHandler(this.TextbookNoTxb_TextChanged);
             // 
             // StudNoTxb
             // 
             this.StudNoTxb.Location = new System.Drawing.Point(110, 303);
-            this.StudNoTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StudNoTxb.Margin = new System.Windows.Forms.Padding(2);
             this.StudNoTxb.Name = "StudNoTxb";
             this.StudNoTxb.Size = new System.Drawing.Size(76, 20);
             this.StudNoTxb.TabIndex = 23;
+            this.StudNoTxb.TextChanged += new System.EventHandler(this.StudNoTxb_TextChanged);
             // 
             // DateTxb
             // 
             this.DateTxb.Location = new System.Drawing.Point(110, 335);
-            this.DateTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DateTxb.Margin = new System.Windows.Forms.Padding(2);
             this.DateTxb.Name = "DateTxb";
             this.DateTxb.Size = new System.Drawing.Size(76, 20);
             this.DateTxb.TabIndex = 22;
+            this.DateTxb.TextChanged += new System.EventHandler(this.DateTxb_TextChanged);
             // 
             // textbooks_soldTableAdapter
             // 
@@ -216,7 +220,7 @@ namespace Project1
             this.Controls.Add(this.StudNoTxb);
             this.Controls.Add(this.DateTxb);
             this.Controls.Add(this.textbooksDataGridView);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "TextbooksSoldTxb";
             this.Text = "TextbooksSold";
             this.Load += new System.EventHandler(this.TextbooksSold_Load);
