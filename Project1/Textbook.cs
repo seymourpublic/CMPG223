@@ -7,8 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using Microsoft.VisualBasic;
-//using DevExpress.XtraEditors;
+
 
 
 // Whenever you want to comment something use exclamtion mark
@@ -173,8 +172,6 @@ namespace Project1
             String status;
 
             
-            //studentNo = X;
-           // rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32("rent number"), studentNo, Convert.ToInt32(textbook_NoTextBox.Text), status);
-        }
+           }
     }
 }
