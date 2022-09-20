@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Microsoft.VisualBasic;
+//using DevExpress.XtraEditors;
+
 
 // Whenever you want to comment something use exclamtion mark
 namespace Project1
@@ -39,6 +42,8 @@ namespace Project1
         //should not sell!!!!!!!!!!
         private void btnSell_Click(object sender, EventArgs e)
         {
+            TextbooksSoldTxb soldTxb = new TextbooksSoldTxb();  
+
             string name = nameTextBox.Text;
             int code = Convert.ToInt32(textbook_NoTextBox.Text);
             int quant = Convert.ToInt32(quantityTextBox.Text);
@@ -61,7 +66,9 @@ namespace Project1
                 Convert.ToInt32(quantityTextBox.Text),
                 Convert.ToInt32(priceTextBox.Text), Convert.ToInt32(textbook_NoTextBox.Text));
                 MessageBox.Show("Textbook Sold succesfully");
-            
+//****                soldTxb.textbooks_soldTableAdapter.InsertQuery(Convert.ToInt32(TextbookSldTxb.Text), Convert.ToInt32(TextbookNoTxb.Text), StudNoTxb.Text, DateTxb.Text);
+
+
             }
 
         }
@@ -165,7 +172,9 @@ namespace Project1
             String studentNo;
             String status;
 
-            rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32("rent number"), studentNo, Convert.ToInt32(textbook_NoTextBox.Text), status);
+            
+            //studentNo = X;
+           // rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32("rent number"), studentNo, Convert.ToInt32(textbook_NoTextBox.Text), status);
         }
     }
 }

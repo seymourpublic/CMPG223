@@ -31,6 +31,12 @@ namespace Project1
         {
             this.components = new System.ComponentModel.Container();
             this.textbooksDataGridView = new System.Windows.Forms.DataGridView();
+            this.textbookSoldDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textbookNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.studentNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.textbooksSoldBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.circleDataSet = new Project1.CircleDataSet();
             this.TextbookSoldTxb = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -40,12 +46,6 @@ namespace Project1
             this.TextbookNoTxb = new System.Windows.Forms.TextBox();
             this.StudNoTxb = new System.Windows.Forms.TextBox();
             this.DateTxb = new System.Windows.Forms.TextBox();
-            this.textbookSoldDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textbookNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.studentNoDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dateDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.textbooksSoldBindingSource = new System.Windows.Forms.BindingSource(this.components);
-            this.circleDataSet = new Project1.CircleDataSet();
             this.textbooks_soldTableAdapter = new Project1.CircleDataSetTableAdapters.Textbooks_soldTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.textbooksDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.textbooksSoldBindingSource)).BeginInit();
@@ -62,88 +62,13 @@ namespace Project1
             this.studentNoDataGridViewTextBoxColumn,
             this.dateDataGridViewTextBoxColumn});
             this.textbooksDataGridView.DataSource = this.textbooksSoldBindingSource;
-            this.textbooksDataGridView.Location = new System.Drawing.Point(31, 12);
+            this.textbooksDataGridView.Location = new System.Drawing.Point(23, 10);
+            this.textbooksDataGridView.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.textbooksDataGridView.Name = "textbooksDataGridView";
             this.textbooksDataGridView.RowHeadersWidth = 51;
             this.textbooksDataGridView.RowTemplate.Height = 24;
-            this.textbooksDataGridView.Size = new System.Drawing.Size(548, 261);
+            this.textbooksDataGridView.Size = new System.Drawing.Size(411, 212);
             this.textbooksDataGridView.TabIndex = 21;
-            // 
-            // TextbookSoldTxb
-            // 
-            this.TextbookSoldTxb.Location = new System.Drawing.Point(296, 307);
-            this.TextbookSoldTxb.Name = "TextbookSoldTxb";
-            this.TextbookSoldTxb.Size = new System.Drawing.Size(107, 66);
-            this.TextbookSoldTxb.TabIndex = 30;
-            this.TextbookSoldTxb.Text = "Insert Sold Book";
-            this.TextbookSoldTxb.UseVisualStyleBackColor = true;
-            this.TextbookSoldTxb.Click += new System.EventHandler(this.TextbookSoldTxb_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(43, 413);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(38, 17);
-            this.label4.TabIndex = 29;
-            this.label4.Text = "Date";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(43, 371);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(79, 17);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "Student No";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(43, 330);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(88, 17);
-            this.label2.TabIndex = 27;
-            this.label2.Text = "Textbook No";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(43, 289);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(98, 17);
-            this.label1.TabIndex = 26;
-            this.label1.Text = "Textbook Sold";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
-            // 
-            // TextbookSldTxb
-            // 
-            this.TextbookSldTxb.Location = new System.Drawing.Point(147, 286);
-            this.TextbookSldTxb.Name = "TextbookSldTxb";
-            this.TextbookSldTxb.Size = new System.Drawing.Size(100, 22);
-            this.TextbookSldTxb.TabIndex = 25;
-            this.TextbookSldTxb.TextChanged += new System.EventHandler(this.TextbookSldTxb_TextChanged);
-            // 
-            // TextbookNoTxb
-            // 
-            this.TextbookNoTxb.Location = new System.Drawing.Point(147, 329);
-            this.TextbookNoTxb.Name = "TextbookNoTxb";
-            this.TextbookNoTxb.Size = new System.Drawing.Size(100, 22);
-            this.TextbookNoTxb.TabIndex = 24;
-            // 
-            // StudNoTxb
-            // 
-            this.StudNoTxb.Location = new System.Drawing.Point(147, 373);
-            this.StudNoTxb.Name = "StudNoTxb";
-            this.StudNoTxb.Size = new System.Drawing.Size(100, 22);
-            this.StudNoTxb.TabIndex = 23;
-            // 
-            // DateTxb
-            // 
-            this.DateTxb.Location = new System.Drawing.Point(147, 412);
-            this.DateTxb.Name = "DateTxb";
-            this.DateTxb.Size = new System.Drawing.Size(100, 22);
-            this.DateTxb.TabIndex = 22;
             // 
             // textbookSoldDataGridViewTextBoxColumn
             // 
@@ -187,15 +112,100 @@ namespace Project1
             this.circleDataSet.DataSetName = "CircleDataSet";
             this.circleDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
+            // TextbookSoldTxb
+            // 
+            this.TextbookSoldTxb.Location = new System.Drawing.Point(222, 249);
+            this.TextbookSoldTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextbookSoldTxb.Name = "TextbookSoldTxb";
+            this.TextbookSoldTxb.Size = new System.Drawing.Size(80, 54);
+            this.TextbookSoldTxb.TabIndex = 30;
+            this.TextbookSoldTxb.Text = "Insert Sold Book";
+            this.TextbookSoldTxb.UseVisualStyleBackColor = true;
+            this.TextbookSoldTxb.Click += new System.EventHandler(this.TextbookSoldTxb_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(32, 336);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(30, 13);
+            this.label4.TabIndex = 29;
+            this.label4.Text = "Date";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(32, 301);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(61, 13);
+            this.label3.TabIndex = 28;
+            this.label3.Text = "Student No";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(32, 268);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(69, 13);
+            this.label2.TabIndex = 27;
+            this.label2.Text = "Textbook No";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(32, 235);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(76, 13);
+            this.label1.TabIndex = 26;
+            this.label1.Text = "Textbook Sold";
+            this.label1.Click += new System.EventHandler(this.label1_Click);
+            // 
+            // TextbookSldTxb
+            // 
+            this.TextbookSldTxb.Location = new System.Drawing.Point(110, 232);
+            this.TextbookSldTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextbookSldTxb.Name = "TextbookSldTxb";
+            this.TextbookSldTxb.Size = new System.Drawing.Size(76, 20);
+            this.TextbookSldTxb.TabIndex = 25;
+            this.TextbookSldTxb.TextChanged += new System.EventHandler(this.TextbookSldTxb_TextChanged);
+            // 
+            // TextbookNoTxb
+            // 
+            this.TextbookNoTxb.Location = new System.Drawing.Point(110, 267);
+            this.TextbookNoTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextbookNoTxb.Name = "TextbookNoTxb";
+            this.TextbookNoTxb.Size = new System.Drawing.Size(76, 20);
+            this.TextbookNoTxb.TabIndex = 24;
+            // 
+            // StudNoTxb
+            // 
+            this.StudNoTxb.Location = new System.Drawing.Point(110, 303);
+            this.StudNoTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StudNoTxb.Name = "StudNoTxb";
+            this.StudNoTxb.Size = new System.Drawing.Size(76, 20);
+            this.StudNoTxb.TabIndex = 23;
+            // 
+            // DateTxb
+            // 
+            this.DateTxb.Location = new System.Drawing.Point(110, 335);
+            this.DateTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.DateTxb.Name = "DateTxb";
+            this.DateTxb.Size = new System.Drawing.Size(76, 20);
+            this.DateTxb.TabIndex = 22;
+            // 
             // textbooks_soldTableAdapter
             // 
             this.textbooks_soldTableAdapter.ClearBeforeFill = true;
             // 
             // TextbooksSoldTxb
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.TextbookSoldTxb);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -206,6 +216,7 @@ namespace Project1
             this.Controls.Add(this.StudNoTxb);
             this.Controls.Add(this.DateTxb);
             this.Controls.Add(this.textbooksDataGridView);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "TextbooksSoldTxb";
             this.Text = "TextbooksSold";
             this.Load += new System.EventHandler(this.TextbooksSold_Load);
@@ -222,7 +233,6 @@ namespace Project1
         private System.Windows.Forms.DataGridView textbooksDataGridView;
         private CircleDataSet circleDataSet;
         private System.Windows.Forms.BindingSource textbooksSoldBindingSource;
-        private CircleDataSetTableAdapters.Textbooks_soldTableAdapter textbooks_soldTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn textbookSoldDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn textbookNoDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn studentNoDataGridViewTextBoxColumn;
@@ -236,5 +246,6 @@ namespace Project1
         private System.Windows.Forms.TextBox TextbookNoTxb;
         private System.Windows.Forms.TextBox StudNoTxb;
         private System.Windows.Forms.TextBox DateTxb;
+        public CircleDataSetTableAdapters.Textbooks_soldTableAdapter textbooks_soldTableAdapter;
     }
 }

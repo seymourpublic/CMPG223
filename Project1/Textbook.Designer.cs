@@ -415,7 +415,7 @@ namespace Project1
             // 
             // btnDelete
             // 
-            this.btnDelete.Location = new System.Drawing.Point(589, 305);
+            this.btnDelete.Location = new System.Drawing.Point(589, 333);
             this.btnDelete.Margin = new System.Windows.Forms.Padding(2);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(260, 26);
@@ -553,7 +553,7 @@ namespace Project1
             // 
             // SearchBtn
             // 
-            this.SearchBtn.Location = new System.Drawing.Point(589, 416);
+            this.SearchBtn.Location = new System.Drawing.Point(589, 444);
             this.SearchBtn.Margin = new System.Windows.Forms.Padding(2);
             this.SearchBtn.Name = "SearchBtn";
             this.SearchBtn.Size = new System.Drawing.Size(260, 19);
@@ -564,7 +564,7 @@ namespace Project1
             // 
             // SearchTxb
             // 
-            this.SearchTxb.Location = new System.Drawing.Point(589, 384);
+            this.SearchTxb.Location = new System.Drawing.Point(589, 412);
             this.SearchTxb.Margin = new System.Windows.Forms.Padding(2);
             this.SearchTxb.Name = "SearchTxb";
             this.SearchTxb.Size = new System.Drawing.Size(261, 20);
@@ -578,7 +578,7 @@ namespace Project1
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(586, 354);
+            this.label1.Location = new System.Drawing.Point(586, 382);
             this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(109, 13);

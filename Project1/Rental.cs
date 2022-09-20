@@ -71,7 +71,9 @@ namespace Project1
 
         private void btnAdmin_Click(object sender, EventArgs e)
         {
-
+            AdminLog log = new AdminLog();
+            log.ShowDialog();
+            this.Close();
         }
 
         private void btnInter_Click(object sender, EventArgs e)
