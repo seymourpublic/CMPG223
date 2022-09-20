@@ -663,6 +663,7 @@ namespace Project1
             this.Name = "Textbook";
             this.Text = "Textbook";
             this.Load += new System.EventHandler(this.Textbook_Load);
+            this.MouseClick += new System.Windows.Forms.MouseEventHandler(this.Textbook_MouseClick);
             ((System.ComponentModel.ISupportInitialize)(this.textbooksBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.circleDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bindingNavigator1)).EndInit();
