@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 // Whenever you want to comment something use exclamtion mark
 namespace Project1
@@ -161,11 +162,29 @@ namespace Project1
 
         private void button5_Click(object sender, EventArgs e)
         {
+
+            using (RentedOutFrm rentedOutFrm = new RentedOutFrm())
+            {
+                if (rentedOutFrm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                {
+                    this.Text = rentedOutFrm.Text;
+                    rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32("rent number"), rentedOutFrm.studentno, Convert.ToInt32(textbook_NoTextBox.Text), rentedOutFrm.status);
+
+                }
+            }
+
+            /*
             RentedOutFrm rentedOutFrm = new RentedOutFrm();
             String studentNo;
             String status;
 
-            rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32("rent number"), studentNo, Convert.ToInt32(textbook_NoTextBox.Text), status);
+            rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32("rent number"), RentedOutFrm.studentNo, Convert.ToInt32(textbook_NoTextBox.Text), status);
+            */
+        }
+
+        private void Textbook_MouseClick(object sender, MouseEventArgs e)
+        {
+
         }
     }
 }

@@ -66,7 +66,7 @@ namespace Project1
             this.statusDataGridViewTextBoxColumn});
             this.dataGridView1.DataSource = this.rentedOutBindingSource;
             this.dataGridView1.Location = new System.Drawing.Point(11, 28);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
@@ -127,15 +127,16 @@ namespace Project1
             // StatusTxb
             // 
             this.StatusTxb.Location = new System.Drawing.Point(95, 308);
-            this.StatusTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StatusTxb.Margin = new System.Windows.Forms.Padding(2);
             this.StatusTxb.Name = "StatusTxb";
             this.StatusTxb.Size = new System.Drawing.Size(76, 20);
             this.StatusTxb.TabIndex = 1;
+            this.StatusTxb.TextChanged += new System.EventHandler(this.StatusTxb_TextChanged);
             // 
             // TextbookNoTxb
             // 
             this.TextbookNoTxb.Location = new System.Drawing.Point(95, 276);
-            this.TextbookNoTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextbookNoTxb.Margin = new System.Windows.Forms.Padding(2);
             this.TextbookNoTxb.Name = "TextbookNoTxb";
             this.TextbookNoTxb.Size = new System.Drawing.Size(76, 20);
             this.TextbookNoTxb.TabIndex = 2;
@@ -143,15 +144,16 @@ namespace Project1
             // StudentNoTxb
             // 
             this.StudentNoTxb.Location = new System.Drawing.Point(95, 240);
-            this.StudentNoTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.StudentNoTxb.Margin = new System.Windows.Forms.Padding(2);
             this.StudentNoTxb.Name = "StudentNoTxb";
             this.StudentNoTxb.Size = new System.Drawing.Size(76, 20);
             this.StudentNoTxb.TabIndex = 3;
+            this.StudentNoTxb.TextChanged += new System.EventHandler(this.StudentNoTxb_TextChanged);
             // 
             // RentTxb
             // 
             this.RentTxb.Location = new System.Drawing.Point(95, 206);
-            this.RentTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.RentTxb.Margin = new System.Windows.Forms.Padding(2);
             this.RentTxb.Name = "RentTxb";
             this.RentTxb.Size = new System.Drawing.Size(76, 20);
             this.RentTxb.TabIndex = 4;
@@ -200,7 +202,7 @@ namespace Project1
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(200, 206);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 54);
             this.button1.TabIndex = 9;
@@ -210,6 +212,7 @@ namespace Project1
             // 
             // button2
             // 
+            this.button2.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.button2.Location = new System.Drawing.Point(526, 231);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(95, 36);
@@ -234,7 +237,7 @@ namespace Project1
             this.Controls.Add(this.TextbookNoTxb);
             this.Controls.Add(this.StatusTxb);
             this.Controls.Add(this.dataGridView1);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "RentedOutFrm";
             this.Text = "RentedOutFrm";
             this.Load += new System.EventHandler(this.RentedOutFrm_Load);

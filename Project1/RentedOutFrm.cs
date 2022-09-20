@@ -12,6 +12,9 @@ namespace Project1
 {
     public partial class RentedOutFrm : Form
     {
+         public string studentno { get; set; }
+        public string status { get; set; }
+
         public RentedOutFrm()
         {
             InitializeComponent();
@@ -38,9 +41,25 @@ namespace Project1
 
         private void button2_Click(object sender, EventArgs e)
         {
+
+
+            /*
             Textbook textbook = new Textbook();
             textbook.ShowDialog();
             this.Close();
+            */
+        }
+
+        private void StudentNoTxb_TextChanged(object sender, EventArgs e)
+        {
+            studentno = StudentNoTxb.Text;
+
+        }
+
+        private void StatusTxb_TextChanged(object sender, EventArgs e)
+        {
+            status = StatusTxb.Text;
+
         }
     }
 }
