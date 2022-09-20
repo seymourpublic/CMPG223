@@ -49,7 +49,7 @@ namespace Project1
             this.TextbookNoTxb = new System.Windows.Forms.TextBox();
             this.StatusTxb = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.dateTxb = new System.Windows.Forms.TextBox();
             this.circleDataSet1 = new Project1.CircleDataSet();
             this.button2 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -133,7 +133,7 @@ namespace Project1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(241, 195);
+            this.button1.Location = new System.Drawing.Point(238, 195);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 54);
@@ -148,9 +148,9 @@ namespace Project1
             this.label4.Location = new System.Drawing.Point(51, 296);
             this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(35, 13);
+            this.label4.Size = new System.Drawing.Size(30, 13);
             this.label4.TabIndex = 17;
-            this.label4.Text = "label4";
+            this.label4.Text = "Date";
             // 
             // label3
             // 
@@ -192,7 +192,7 @@ namespace Project1
             // 
             // StudentNoTxb
             // 
-            this.StudentNoTxb.Location = new System.Drawing.Point(110, 226);
+            this.StudentNoTxb.Location = new System.Drawing.Point(110, 262);
             this.StudentNoTxb.Margin = new System.Windows.Forms.Padding(2);
             this.StudentNoTxb.Name = "StudentNoTxb";
             this.StudentNoTxb.Size = new System.Drawing.Size(76, 20);
@@ -200,7 +200,7 @@ namespace Project1
             // 
             // TextbookNoTxb
             // 
-            this.TextbookNoTxb.Location = new System.Drawing.Point(110, 262);
+            this.TextbookNoTxb.Location = new System.Drawing.Point(110, 228);
             this.TextbookNoTxb.Margin = new System.Windows.Forms.Padding(2);
             this.TextbookNoTxb.Name = "TextbookNoTxb";
             this.TextbookNoTxb.Size = new System.Drawing.Size(76, 20);
@@ -208,7 +208,7 @@ namespace Project1
             // 
             // StatusTxb
             // 
-            this.StatusTxb.Location = new System.Drawing.Point(110, 293);
+            this.StatusTxb.Location = new System.Drawing.Point(110, 327);
             this.StatusTxb.Margin = new System.Windows.Forms.Padding(2);
             this.StatusTxb.Name = "StatusTxb";
             this.StatusTxb.Size = new System.Drawing.Size(76, 20);
@@ -224,13 +224,13 @@ namespace Project1
             this.label5.TabIndex = 20;
             this.label5.Text = "Status";
             // 
-            // textBox1
+            // dateTxb
             // 
-            this.textBox1.Location = new System.Drawing.Point(110, 325);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(76, 20);
-            this.textBox1.TabIndex = 19;
+            this.dateTxb.Location = new System.Drawing.Point(110, 296);
+            this.dateTxb.Margin = new System.Windows.Forms.Padding(2);
+            this.dateTxb.Name = "dateTxb";
+            this.dateTxb.Size = new System.Drawing.Size(76, 20);
+            this.dateTxb.TabIndex = 19;
             // 
             // circleDataSet1
             // 
@@ -254,7 +254,7 @@ namespace Project1
             this.ClientSize = new System.Drawing.Size(805, 367);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.dateTxb);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
@@ -299,7 +299,7 @@ namespace Project1
         private System.Windows.Forms.TextBox TextbookNoTxb;
         private System.Windows.Forms.TextBox StatusTxb;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox dateTxb;
         private CircleDataSet circleDataSet1;
         private System.Windows.Forms.Button button2;
     }

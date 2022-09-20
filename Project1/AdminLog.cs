@@ -26,12 +26,19 @@ namespace Project1
 
         private void btnLog_Click(object sender, EventArgs e)
         {
-            if (txbUser.Text == "admin" && txbPass.Text == "admin")
+            if (txbUser.Text == "admin" )
             {
-                Textbook text = new Textbook();
-                text.ShowDialog();
-                this.Close();
+                if (txbPass.Text == "admin")
+                {
+                    Textbook text = new Textbook();
+                    text.ShowDialog();
+                    this.Close();
+                }
+                else
+                    MessageBox.Show("Password incorrect. PLease try again");
             }
+            else
+                MessageBox.Show("Username incorrect. PLease try again");
 
         }
     }

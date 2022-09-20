@@ -70,7 +70,7 @@ namespace Project1
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(669, 162);
+            this.dataGridView1.Size = new System.Drawing.Size(553, 162);
             this.dataGridView1.TabIndex = 0;
             // 
             // rentNoDataGridViewTextBoxColumn
@@ -202,7 +202,7 @@ namespace Project1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(200, 206);
+            this.button1.Location = new System.Drawing.Point(286, 210);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(80, 54);

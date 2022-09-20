@@ -26,6 +26,8 @@ namespace Project1
 
         private void button1_Click(object sender, EventArgs e)
         {
+            //this.textbooks_soldTableAdapter.InsertQuery(Convert.ToInt32(TextbookSldTxb.Text), Convert.ToInt32(TextbookNoTxb.Text), StudNoTxb.Text, DateTxb.Text);
+            this.returnedTableAdapter.InsertQuery(Convert.ToInt32(RentTxb.Text),StudentNoTxb.Text,StudentNoTxb.Text,dateTxb.Text,StatusTxb.Text);
 
         }
 
