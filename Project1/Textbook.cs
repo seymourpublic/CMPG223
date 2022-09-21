@@ -80,7 +80,7 @@ namespace Project1
                 Convert.ToInt32(quantityTextBox.Text),
                 Convert.ToInt32(priceTextBox.Text), Convert.ToInt32(textbook_NoTextBox.Text));
                 MessageBox.Show("Textbook Sold succesfully");
-//****                soldTxb.textbooks_soldTableAdapter.InsertQuery(Convert.ToInt32(TextbookSldTxb.Text), Convert.ToInt32(TextbookNoTxb.Text), StudNoTxb.Text, DateTxb.Text);
+
 
 
             }
@@ -168,9 +168,13 @@ namespace Project1
 
         private void button3_Click(object sender, EventArgs e)
         {
-            RentedOutFrm rent= new RentedOutFrm();
+           
+            RentedOutFrm rent= new RentedOutFrm(); 
+            rent.button2.Visible = false;
             rent.ShowDialog();
             this.Close();
+            
+           
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -182,15 +186,25 @@ namespace Project1
 
         private void button5_Click(object sender, EventArgs e)
         {
+            //  RentedOutFrm rent = new RentedOutFrm();
+           
 
-            using (RentedOutFrm rentedOutFrm = new RentedOutFrm())
+            try
             {
-                if (rentedOutFrm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                using (RentedOutFrm rentedOutFrm = new RentedOutFrm())
                 {
-                    this.Text = rentedOutFrm.Text;
-                    rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32(rentedOutFrm.rentNo), rentedOutFrm.studentno, Convert.ToInt32(textbook_NoTextBox.Text), rentedOutFrm.status);
+                    if (rentedOutFrm.ShowDialog() == System.Windows.Forms.DialogResult.OK)
+                    {
+                        rentedOutFrm.button2.Visible = true;
+                        this.Text = rentedOutFrm.Text;
+                        rentedOutFrm.rented_outTableAdapter.InsertQuery(Convert.ToInt32(rentedOutFrm.rentNo), rentedOutFrm.studentno, Convert.ToInt32(textbook_NoTextBox.Text), rentedOutFrm.status);
 
+                    }
                 }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
 
             /*

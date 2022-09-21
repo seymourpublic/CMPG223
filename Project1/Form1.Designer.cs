@@ -29,6 +29,7 @@ namespace Project1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.PictureBox pictureBox5;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmHome));
             this.btnAdmin = new System.Windows.Forms.Button();
@@ -56,6 +57,7 @@ namespace Project1
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.btnCheck = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbChildDev)).BeginInit();
@@ -70,7 +72,7 @@ namespace Project1
             // 
             pictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox5.Image")));
             pictureBox5.Location = new System.Drawing.Point(38, 10);
-            pictureBox5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            pictureBox5.Margin = new System.Windows.Forms.Padding(2);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new System.Drawing.Size(48, 46);
             pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -80,11 +82,12 @@ namespace Project1
             // btnAdmin
             // 
             this.btnAdmin.Location = new System.Drawing.Point(1069, 10);
-            this.btnAdmin.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAdmin.Margin = new System.Windows.Forms.Padding(2);
             this.btnAdmin.Name = "btnAdmin";
             this.btnAdmin.Size = new System.Drawing.Size(84, 30);
             this.btnAdmin.TabIndex = 1;
             this.btnAdmin.Text = "Admin Log-in";
+            this.toolTip1.SetToolTip(this.btnAdmin, "Click to log into the admin view");
             this.btnAdmin.UseVisualStyleBackColor = true;
             this.btnAdmin.Click += new System.EventHandler(this.btnAdmin_Click);
             // 
@@ -93,7 +96,7 @@ namespace Project1
             this.pcbChildDev.BackColor = System.Drawing.SystemColors.ButtonShadow;
             this.pcbChildDev.Image = ((System.Drawing.Image)(resources.GetObject("pcbChildDev.Image")));
             this.pcbChildDev.Location = new System.Drawing.Point(38, 76);
-            this.pcbChildDev.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbChildDev.Margin = new System.Windows.Forms.Padding(2);
             this.pcbChildDev.Name = "pcbChildDev";
             this.pcbChildDev.Size = new System.Drawing.Size(344, 372);
             this.pcbChildDev.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -104,7 +107,7 @@ namespace Project1
             // 
             this.pcbStatMt.Image = ((System.Drawing.Image)(resources.GetObject("pcbStatMt.Image")));
             this.pcbStatMt.Location = new System.Drawing.Point(434, 76);
-            this.pcbStatMt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbStatMt.Margin = new System.Windows.Forms.Padding(2);
             this.pcbStatMt.Name = "pcbStatMt";
             this.pcbStatMt.Size = new System.Drawing.Size(349, 372);
             this.pcbStatMt.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -115,7 +118,7 @@ namespace Project1
             // 
             this.pcbAbPsych.Image = ((System.Drawing.Image)(resources.GetObject("pcbAbPsych.Image")));
             this.pcbAbPsych.Location = new System.Drawing.Point(830, 76);
-            this.pcbAbPsych.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbAbPsych.Margin = new System.Windows.Forms.Padding(2);
             this.pcbAbPsych.Name = "pcbAbPsych";
             this.pcbAbPsych.Size = new System.Drawing.Size(323, 372);
             this.pcbAbPsych.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -125,33 +128,36 @@ namespace Project1
             // btnStat
             // 
             this.btnStat.Location = new System.Drawing.Point(712, 469);
-            this.btnStat.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnStat.Margin = new System.Windows.Forms.Padding(2);
             this.btnStat.Name = "btnStat";
             this.btnStat.Size = new System.Drawing.Size(71, 39);
             this.btnStat.TabIndex = 5;
             this.btnStat.Text = "buy";
+            this.toolTip1.SetToolTip(this.btnStat, "Click to add to cart");
             this.btnStat.UseVisualStyleBackColor = true;
             this.btnStat.Click += new System.EventHandler(this.btnStat_Click);
             // 
             // btnAb
             // 
             this.btnAb.Location = new System.Drawing.Point(1085, 469);
-            this.btnAb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnAb.Margin = new System.Windows.Forms.Padding(2);
             this.btnAb.Name = "btnAb";
             this.btnAb.Size = new System.Drawing.Size(68, 39);
             this.btnAb.TabIndex = 6;
             this.btnAb.Text = "buy";
+            this.toolTip1.SetToolTip(this.btnAb, "Click to add to cart");
             this.btnAb.UseVisualStyleBackColor = true;
             this.btnAb.Click += new System.EventHandler(this.btnAb_Click);
             // 
             // btnChild
             // 
             this.btnChild.Location = new System.Drawing.Point(311, 469);
-            this.btnChild.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChild.Margin = new System.Windows.Forms.Padding(2);
             this.btnChild.Name = "btnChild";
             this.btnChild.Size = new System.Drawing.Size(70, 41);
             this.btnChild.TabIndex = 7;
             this.btnChild.Text = "buy";
+            this.toolTip1.SetToolTip(this.btnChild, "Click to add to cart");
             this.btnChild.UseVisualStyleBackColor = true;
             this.btnChild.Click += new System.EventHandler(this.btnChild_Click);
             // 
@@ -193,7 +199,7 @@ namespace Project1
             // 
             this.pcbEcon.Image = ((System.Drawing.Image)(resources.GetObject("pcbEcon.Image")));
             this.pcbEcon.Location = new System.Drawing.Point(39, 559);
-            this.pcbEcon.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbEcon.Margin = new System.Windows.Forms.Padding(2);
             this.pcbEcon.Name = "pcbEcon";
             this.pcbEcon.Size = new System.Drawing.Size(344, 372);
             this.pcbEcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -204,7 +210,7 @@ namespace Project1
             // 
             this.pcbLaw.Image = ((System.Drawing.Image)(resources.GetObject("pcbLaw.Image")));
             this.pcbLaw.Location = new System.Drawing.Point(434, 559);
-            this.pcbLaw.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbLaw.Margin = new System.Windows.Forms.Padding(2);
             this.pcbLaw.Name = "pcbLaw";
             this.pcbLaw.Size = new System.Drawing.Size(349, 372);
             this.pcbLaw.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -215,7 +221,7 @@ namespace Project1
             // 
             this.pcbGeo.Image = ((System.Drawing.Image)(resources.GetObject("pcbGeo.Image")));
             this.pcbGeo.Location = new System.Drawing.Point(830, 559);
-            this.pcbGeo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pcbGeo.Margin = new System.Windows.Forms.Padding(2);
             this.pcbGeo.Name = "pcbGeo";
             this.pcbGeo.Size = new System.Drawing.Size(322, 372);
             this.pcbGeo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -225,33 +231,36 @@ namespace Project1
             // btnLaw
             // 
             this.btnLaw.Location = new System.Drawing.Point(712, 948);
-            this.btnLaw.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnLaw.Margin = new System.Windows.Forms.Padding(2);
             this.btnLaw.Name = "btnLaw";
             this.btnLaw.Size = new System.Drawing.Size(71, 39);
             this.btnLaw.TabIndex = 14;
             this.btnLaw.Text = "buy";
+            this.toolTip1.SetToolTip(this.btnLaw, "Click to add to cart");
             this.btnLaw.UseVisualStyleBackColor = true;
             this.btnLaw.Click += new System.EventHandler(this.btnLaw_Click);
             // 
             // btnPhys
             // 
             this.btnPhys.Location = new System.Drawing.Point(1080, 950);
-            this.btnPhys.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnPhys.Margin = new System.Windows.Forms.Padding(2);
             this.btnPhys.Name = "btnPhys";
             this.btnPhys.Size = new System.Drawing.Size(71, 37);
             this.btnPhys.TabIndex = 15;
             this.btnPhys.Text = "buy";
+            this.toolTip1.SetToolTip(this.btnPhys, "Click to add to cart");
             this.btnPhys.UseVisualStyleBackColor = true;
             this.btnPhys.Click += new System.EventHandler(this.btnPhys_Click);
             // 
             // btnEco
             // 
             this.btnEco.Location = new System.Drawing.Point(310, 950);
-            this.btnEco.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnEco.Margin = new System.Windows.Forms.Padding(2);
             this.btnEco.Name = "btnEco";
             this.btnEco.Size = new System.Drawing.Size(71, 39);
             this.btnEco.TabIndex = 16;
             this.btnEco.Text = "buy";
+            this.toolTip1.SetToolTip(this.btnEco, "Click to add to cart");
             this.btnEco.UseVisualStyleBackColor = true;
             this.btnEco.Click += new System.EventHandler(this.btnEco_Click);
             // 
@@ -291,18 +300,19 @@ namespace Project1
             // btnRent
             // 
             this.btnRent.Location = new System.Drawing.Point(969, 10);
-            this.btnRent.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnRent.Margin = new System.Windows.Forms.Padding(2);
             this.btnRent.Name = "btnRent";
             this.btnRent.Size = new System.Drawing.Size(80, 30);
             this.btnRent.TabIndex = 20;
             this.btnRent.Text = "Rent-a-book";
+            this.toolTip1.SetToolTip(this.btnRent, "click to transfer to the rental view");
             this.btnRent.UseVisualStyleBackColor = true;
             this.btnRent.Click += new System.EventHandler(this.btnRent_Click);
             // 
             // txbName
             // 
             this.txbName.Location = new System.Drawing.Point(200, 23);
-            this.txbName.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbName.Margin = new System.Windows.Forms.Padding(2);
             this.txbName.Name = "txbName";
             this.txbName.Size = new System.Drawing.Size(76, 20);
             this.txbName.TabIndex = 22;
@@ -310,7 +320,7 @@ namespace Project1
             // txbEmail
             // 
             this.txbEmail.Location = new System.Drawing.Point(387, 27);
-            this.txbEmail.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txbEmail.Margin = new System.Windows.Forms.Padding(2);
             this.txbEmail.Name = "txbEmail";
             this.txbEmail.Size = new System.Drawing.Size(76, 20);
             this.txbEmail.TabIndex = 23;
@@ -340,11 +350,12 @@ namespace Project1
             // btnCheck
             // 
             this.btnCheck.Location = new System.Drawing.Point(864, 10);
-            this.btnCheck.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCheck.Margin = new System.Windows.Forms.Padding(2);
             this.btnCheck.Name = "btnCheck";
             this.btnCheck.Size = new System.Drawing.Size(80, 30);
             this.btnCheck.TabIndex = 26;
             this.btnCheck.Text = "Checkout";
+            this.toolTip1.SetToolTip(this.btnCheck, "Click here to checkout after adding your name and email");
             this.btnCheck.UseVisualStyleBackColor = true;
             this.btnCheck.Click += new System.EventHandler(this.btnCheck_Click);
             // 
@@ -382,7 +393,7 @@ namespace Project1
             this.Controls.Add(this.pcbChildDev);
             this.Controls.Add(this.btnAdmin);
             this.HelpButton = true;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "frmHome";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -425,6 +436,7 @@ namespace Project1
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Button btnCheck;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
 

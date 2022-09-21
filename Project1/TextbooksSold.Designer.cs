@@ -114,8 +114,9 @@ namespace Project1
             // 
             // TextbookSoldTxb
             // 
+            this.TextbookSoldTxb.DialogResult = System.Windows.Forms.DialogResult.OK;
             this.TextbookSoldTxb.Location = new System.Drawing.Point(222, 249);
-            this.TextbookSoldTxb.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.TextbookSoldTxb.Margin = new System.Windows.Forms.Padding(2);
             this.TextbookSoldTxb.Name = "TextbookSoldTxb";
             this.TextbookSoldTxb.Size = new System.Drawing.Size(80, 54);
             this.TextbookSoldTxb.TabIndex = 30;

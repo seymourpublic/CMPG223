@@ -52,6 +52,7 @@ namespace Project1
             this.dateTxb = new System.Windows.Forms.TextBox();
             this.circleDataSet1 = new Project1.CircleDataSet();
             this.button2 = new System.Windows.Forms.Button();
+            this.calDate = new System.Windows.Forms.MonthCalendar();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.returnedBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.circleDataSet)).BeginInit();
@@ -247,11 +248,18 @@ namespace Project1
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
+            // calDate
+            // 
+            this.calDate.Location = new System.Drawing.Point(265, 336);
+            this.calDate.Name = "calDate";
+            this.calDate.TabIndex = 22;
+            // 
             // frmReturned
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(805, 367);
+            this.ClientSize = new System.Drawing.Size(805, 516);
+            this.Controls.Add(this.calDate);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dateTxb);
@@ -302,5 +310,6 @@ namespace Project1
         private System.Windows.Forms.TextBox dateTxb;
         private CircleDataSet circleDataSet1;
         private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.MonthCalendar calDate;
     }
 }

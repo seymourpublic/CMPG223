@@ -26,6 +26,7 @@ namespace Project1
             // TODO: This line of code loads data into the 'circleDataSet.Rented_out' table. You can move, or remove it, as needed.
             this.rented_outTableAdapter.Fill(this.circleDataSet.Rented_out);
 
+           
         }
 
         private void label1_Click(object sender, EventArgs e)
@@ -42,6 +43,7 @@ namespace Project1
 
         private void button2_Click(object sender, EventArgs e)
         {
+
 
 
             /*
@@ -66,6 +68,14 @@ namespace Project1
         private void RentTxb_TextChanged(object sender, EventArgs e)
         {
             rentNo = RentTxb.Text;
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
+            Textbook textbook = new Textbook();
+            textbook.ShowDialog();
+            this.Close();
         }
     }
 }

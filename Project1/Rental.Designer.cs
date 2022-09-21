@@ -29,6 +29,7 @@ namespace Project1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.Windows.Forms.PictureBox pictureBox5;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Rental));
             this.pcbData = new System.Windows.Forms.PictureBox();
@@ -56,6 +57,7 @@ namespace Project1
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             pictureBox5 = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbData)).BeginInit();
@@ -220,6 +222,7 @@ namespace Project1
             this.btnBio.Size = new System.Drawing.Size(56, 25);
             this.btnBio.TabIndex = 22;
             this.btnBio.Text = "Rent";
+            this.toolTip1.SetToolTip(this.btnBio, "Click to add to cart");
             this.btnBio.UseVisualStyleBackColor = true;
             this.btnBio.Click += new System.EventHandler(this.button1_Click);
             // 
@@ -231,6 +234,7 @@ namespace Project1
             this.btnInter.Size = new System.Drawing.Size(56, 25);
             this.btnInter.TabIndex = 23;
             this.btnInter.Text = "Rent";
+            this.toolTip1.SetToolTip(this.btnInter, "Click to add to cart");
             this.btnInter.UseVisualStyleBackColor = true;
             this.btnInter.Click += new System.EventHandler(this.btnInter_Click);
             // 
@@ -242,6 +246,7 @@ namespace Project1
             this.btnMan.Size = new System.Drawing.Size(56, 25);
             this.btnMan.TabIndex = 24;
             this.btnMan.Text = "Rent";
+            this.toolTip1.SetToolTip(this.btnMan, "Click to add to cart");
             this.btnMan.UseVisualStyleBackColor = true;
             this.btnMan.Click += new System.EventHandler(this.btnMan_Click);
             // 
@@ -253,6 +258,7 @@ namespace Project1
             this.btnBus.Size = new System.Drawing.Size(56, 27);
             this.btnBus.TabIndex = 25;
             this.btnBus.Text = "Rent";
+            this.toolTip1.SetToolTip(this.btnBus, "Click to add to cart");
             this.btnBus.UseVisualStyleBackColor = true;
             this.btnBus.Click += new System.EventHandler(this.btnBus_Click);
             // 
@@ -264,6 +270,7 @@ namespace Project1
             this.btnFut.Size = new System.Drawing.Size(56, 27);
             this.btnFut.TabIndex = 26;
             this.btnFut.Text = "Rent";
+            this.toolTip1.SetToolTip(this.btnFut, "Click to add to cart");
             this.btnFut.UseVisualStyleBackColor = true;
             this.btnFut.Click += new System.EventHandler(this.btnFut_Click);
             // 
@@ -275,6 +282,7 @@ namespace Project1
             this.btnData.Size = new System.Drawing.Size(56, 27);
             this.btnData.TabIndex = 27;
             this.btnData.Text = "Rent";
+            this.toolTip1.SetToolTip(this.btnData, "Click to add to cart");
             this.btnData.UseVisualStyleBackColor = true;
             this.btnData.Click += new System.EventHandler(this.btnData_Click);
             // 
@@ -347,7 +355,7 @@ namespace Project1
             this.AutoScrollMargin = new System.Drawing.Size(5, 5);
             this.AutoScrollMinSize = new System.Drawing.Size(5, 5);
             this.BackColor = System.Drawing.Color.AliceBlue;
-            this.ClientSize = new System.Drawing.Size(802, 643);
+            this.ClientSize = new System.Drawing.Size(759, 631);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -417,5 +425,6 @@ namespace Project1
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.ToolTip toolTip1;
     }
 }
